@@ -1,0 +1,33 @@
+<!-- <section>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="../../../assets/logo.svg" alt="Bootstrap" width="30" height="24"></a>
+        <h3>¡Welcome!</h3>
+        </div>
+    </nav>
+</section> -->
+<section class="prueba">
+    <div class="image-container">
+    <img src="../../../assets/img/yuliya-matuzava-imvwSk2SOAE-unsplash.jpg" alt="">
+    </div>
+
+    <div class="content-form">
+        <div class="content-form-login">
+            <form id="formulario" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+                <!-- <img src="../../../assets/user.svg" alt=""> -->
+                <h1 id="ingresar">LOGIN</h1>
+                <label class="form__label">Email</label>
+                <input type="text" class="form__input" placeholder="Example@*******.com" formControlName="email">
+                <label class="form__label">Password</label>
+                <input type="password" class="form__input" placeholder="********" formControlName="password">
+                <br>
+                <button class="custom-button" type="submit" >Login</button>
+                <br>
+                <button class="custom-button" id="create-account-btn" (click)="onClick()">Create Account with Google</button>
+                <a class="form__label__RecuperarContraseña" href="#">Recuperar contraseña</a>
+                <br>
+                <p class="text__p"><strong>No tienes cuenta?</strong><a href="/register"> Registrarse</a></p>
+            </form>
+        </div>
+    </div>
+</section>

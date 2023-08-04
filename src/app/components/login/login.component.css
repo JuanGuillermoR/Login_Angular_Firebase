@@ -1,0 +1,153 @@
+.prueba {
+    /* background: linear-gradient(to bottom right, #8e8d92, #fab46b24); */
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: calc(100vh - 58px); */
+}
+
+.image-container {
+    max-width: 100vh;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+img {
+    width: 100vh;
+    height: auto;
+}
+.content-form{
+    height: 100vh;
+    width: calc(100vh - 175px);
+}
+
+.content-form-login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ingresar{
+    text-align: center;
+    font-family: none;
+    font-size: -webkit-xxx-large;
+}
+  
+#formulario {
+    display: grid;
+    /* width: 30vh; */
+    font-size: x-large;
+}
+
+#formulario img {
+    width: 195px; 
+}
+
+.form__label{
+    font-family: none;
+}
+
+.form__input{
+    border: 3px solid rgb(176, 176, 212); 
+    /* border: transparent; */
+    border-radius: 15px;
+    background: transparent;
+    padding: 0 15px;
+    box-shadow: 0 0 10px rgb(176, 176, 212), 0 0 10px rgb(176, 176, 212);
+    color: rgb(176, 176, 212);
+    font-family: none;
+}
+
+.form__input::placeholder{
+    color: black;
+}
+
+.custom-button {
+    background-color: blue; 
+    color: white; 
+    border: 3px solid blue;; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 18px;
+    border-radius: 15px;
+    font-family: none;
+}
+  
+  
+.custom-button:hover {
+    background-color: green; 
+    border-color: green;
+}
+
+.text__p{
+    font-size: large;
+    font-family: none;
+}
+
+.form__label__RecuperarContraseña{
+    font-family: none;
+    font-size: large;
+    margin-top: 10px;
+    display: grid;
+    justify-content: flex-end;
+    text-decoration: none;
+    text-transform: none;
+}
+.form__label__RecuperarContraseña:visited {
+    color: black;
+}
+
+
+@media screen and (max-width: 912px) {
+    .image-container {
+        display: none; 
+    }
+    .desktop-only {
+        display: block; 
+    }
+
+    #ingresar{
+        font-size: -webkit-xxx-large;
+    }
+    
+    #formulario {
+        display: grid;
+        font-size: xx-large;
+    }
+
+    .form__input::placeholder{
+        font-size: x-large;
+    }
+
+}
+
+
+@media screen and (max-width: 414px) {
+    .form__input::placeholder{
+        font-size: x-large;
+    }
+
+    .form__input{
+        width: 300px;
+    }
+
+    .custom-button {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .form__input{
+        width: 250px;
+    }
+
+    .custom-button {
+        width: 250px;
+    }
+
+    .form__input::placeholder{
+        font-size: large;
+    }
+}
+

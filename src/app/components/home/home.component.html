@@ -1,0 +1,17 @@
+<section>
+    <nav>
+        <div class="container__nav">
+            <!-- <a class="navbar-brand" href="#"><img src="../../../assets/logo.svg" alt="Bootstrap" width="30" height="24"></a> -->
+            <h4>MARVEL</h4>
+            <button (click)="onClick()" class="btn btn-outline-dark" type="submit">Logout</button>
+        </div>
+    </nav>
+</section>
+
+<div class="container__all">
+    <div class="Content__targets" *ngFor="let character of characters">
+        <h2>{{ character.name }}</h2>
+        <p>{{ character.description }}</p>
+        <img [src]="character.thumbnail?.path + '.' + character.thumbnail?.extension" alt="{{ character.name }}">
+    </div>
+</div>  
